@@ -9,6 +9,7 @@ import {
   MuiPickersUtilsProvider,
   KeyboardDatePicker,
 } from "@material-ui/pickers";
+import Bookings from "../Bookings/Bookings";
 const Book = () => {
   const { bedType } = useParams();
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
@@ -78,6 +79,7 @@ const Book = () => {
           Book Now
         </Button>
       </MuiPickersUtilsProvider>
+      <Bookings></Bookings>
     </div>
   );
 };
